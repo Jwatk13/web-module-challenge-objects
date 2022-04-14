@@ -15,10 +15,16 @@ The function should:
   Example createMenuItem('tacos', 8, 'Lunch') should return {name: 'tacos', price: 8, category: 'Lunch'}
 */
 
+const lunchItem = {}
+function createMenuItem(object, name, value1, price, value2, category, value3){
+  object[name] = value1;
+  object[price] = value2;
+  object[category] = value3;
 
-function createMenuItem(/*Your code here*/){
-  /*Your code here*/
+  return object;
 }
+console.log(createMenuItem(lunchItem, 'name', 'Tacos', 'price', '8', 'category','Lunch'))
+
 
 
 
